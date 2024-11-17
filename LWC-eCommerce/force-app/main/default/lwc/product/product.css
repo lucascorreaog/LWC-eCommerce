@@ -1,0 +1,56 @@
+.product-card {
+    display: flex;
+    flex-direction: column; /* Permite que os elementos fiquem organizados verticalmente */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s; /* Adiciona animações suaves */
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: scale(1.03); /* Aumenta ligeiramente o cartão ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Intensifica a sombra */
+}
+
+.product-image {
+    width: 120px; /* Define uma largura fixa para consistência */
+    height: 120px; /* Define uma altura fixa */
+    border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem seja centralizada e cortada corretamente */
+    margin-bottom: 15px; /* Espaço entre a imagem e as informações */
+    border: 2px solid #f4f4f4; /* Adiciona uma borda leve */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Centraliza o texto */
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.product-family, .product-code {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-family {
+    font-style: italic; /* Dá um estilo diferenciado para a família */
+}
+
+.product-price {
+    font-size: 16px;
+    color: #28a745; /* Cor verde para destacar o preço */
+    font-weight: bold;
+    margin-top: 10px;
+}

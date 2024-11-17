@@ -1,0 +1,40 @@
+/* Estilo do container principal */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do container do input */
+.input-container {
+    position: relative;
+    width: 300px; /* Largura do input */
+}
+
+/* Estilo do ícone de pesquisa */
+.search-icon {
+    position: absolute;
+    left: 12px; /* Distância do ícone para a borda esquerda */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    width: 16px; /* Tamanho do ícone */
+    height: 16px;
+    pointer-events: none; /* Evita interferência no clique */
+}
+
+/* Estilo do input */
+.input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Espaço para o ícone à esquerda */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+/* Estilo para quando o input está em foco */
+.input-container input:focus {
+    border-color: #888;
+    background-color: #fff;
+    outline: none;
+}

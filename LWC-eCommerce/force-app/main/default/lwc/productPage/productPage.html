@@ -1,0 +1,15 @@
+<template>
+    
+        <template if:true={products}>
+            <template for:each={products} for:item="product">
+                <c-product key={product.Id} product={product}></c-product>
+            </template>
+        </template>
+        <template if:false={products}>
+            <p>Nenhum produto encontrado.</p>
+        </template>
+        <template if:true={error}>
+            <p class="error-message">Erro ao carregar produtos: {error.body.message}</p>
+        </template>
+    
+</template>
