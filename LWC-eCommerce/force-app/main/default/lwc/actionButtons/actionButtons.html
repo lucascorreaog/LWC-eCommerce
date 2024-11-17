@@ -1,0 +1,18 @@
+<template>
+    <div class="user-actions">
+        <button class="language-button" onclick={handleLanguage}>
+            <img src={language_icon} alt="Language Icon" class="button-icon" />
+            <span>EN</span>
+        </button>
+
+        <button class="wishlist-button" onclick={handleWishlist}>
+            <span>Wishlist</span>
+            <img src={heart_icon} alt="Heart Icon" class="button-icon" />
+        </button>
+
+        <button class="cart-button" onclick={handleCart}>
+            <span>Your Cart</span>
+            <img src={cart_icon} alt="Cart Icon" class="button-icon" />
+        </button>
+    </div>
+</template>

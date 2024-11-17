@@ -1,0 +1,48 @@
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.language-button,
+.wishlist-button,
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    transition: background-color 0.3s;
+}
+
+.language-button:hover,
+.wishlist-button:hover,
+.cart-button:hover {
+    background-color: #ddd;
+}
+
+.language-button {
+    background-color: #f4f4f4;
+}
+
+.wishlist-button {
+    background-color: #e6e6fa;
+    color: #4b0082;
+}
+
+.cart-button {
+    background-color: #e6e6fa;
+    color: #4b0082;
+}
+
+.button-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}

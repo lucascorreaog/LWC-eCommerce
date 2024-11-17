@@ -1,0 +1,11 @@
+<template>
+    <div class="product-card">
+        <img src={product.ImageUrl} alt={product.Name} class="product-image" />
+        <div class="product-info">
+            <p class="product-name">{product.Name}</p>
+            <p class="product-family">Categoria: {product.Family}</p>
+            <p class="product-code">Código: {product.ProductCode}</p>
+            <p class="product-price">{formattedPrice}</p>
+        </div>
+    </div>
+</template>
